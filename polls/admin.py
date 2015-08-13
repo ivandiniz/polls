@@ -12,7 +12,7 @@ class QuestionAdmin(admin.ModelAdmin):
     #fields = ['pub_date', 'question_text'] Ordem de renderizar no admin criação ou edição
     fieldsets = [
         (None,               {'fields': ['question_text']}),
-        ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
+        ('Date information', {'fields': ['pub_date']}),
     ]
     inlines = [ChoiceInLine]
 
